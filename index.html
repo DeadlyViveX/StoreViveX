@@ -1269,12 +1269,13 @@ response.ok &&
 result.success
 ){
 
-document.getElementById(
-"successText"
-).innerHTML =
-
-"Your order has been placed successfully." +
-"<br><br>" +
+document.getElementById("successText").innerHTML = `
+    Your order has been placed successfully.
+    <br><br>
+    <p style="color:#00ff88; font-size:15px; font-weight:bold; text-align:center;">
+        ✓ Pay On Delivery - No Advance Payment Required
+    </p>
+`;
 
 "<b>Order ID: " +
 orderID +
